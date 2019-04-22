@@ -116,7 +116,7 @@ f.close()
     first line
     second line
 
-与之相对的，
+与之相对的，我们可以使用 `file.readlines()` 这个命令，将文件作为一个列表返回，列表中的每个元素对应着文件中的每一行：
 
 ```python
 f = open('test-file.txt', 'w')
@@ -148,7 +148,7 @@ f.close()
     second line
     third line
 
-与之相对的，我们也可以用 `file.writelines()` 把一个列表写入到一个文件中，按顺序每一行写入列表的对应元素：
+与之相对的，我们也可以用 `file.writelines()` 把一个列表写入到一个文件中，按索引顺序（从 0 开始）逐行写入列表的对应元素：：
 
 ```python
 a_list = ['first line\n', 'second line\n', 'third line\n']
@@ -400,7 +400,7 @@ with open('results.txt', 'w') as result:
 
 竟然这么简单就搞定了？！
 
-这 10 行的代码，在几秒钟内从 370,099 个英文单词中找到 3,770 个如此计算等于 100 的词汇。
+这 10 行的代码，在几秒钟内从 370,101 个英文单词中找到 3,771 个如此计算等于 100 的词汇。
 
 喝着咖啡翻一翻 `results.txt`，很快就找到了那些用来做反例格外恰当的词汇。
 
